@@ -86,3 +86,13 @@ navigation.forEach(element => {
         event.preventDefault();
     })
 })
+
+//Stretch
+
+title.addEventListener("mouseover", event => {
+    TweenMax.to(event.target, 2, {x:200, ease:Bounce.easeOut});
+})
+
+title.addEventListener("mouseout", event => {
+    TweenMax.to(event.target, 1, {x:0});
+})
